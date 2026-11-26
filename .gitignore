@@ -1,0 +1,65 @@
+# =========================================================
+#  FireGuard - fichiers à NE PAS envoyer sur Git
+# =========================================================
+
+# --- Environnement Python ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Données (datasets, vidéos, archives) ---
+# Trop lourdes pour Git : chaque membre les télécharge lui-même.
+data/
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# --- Modèles entraînés (poids) ---
+# Partagés via Google Drive, pas via Git.
+models/*
+!models/.gitkeep
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+
+# --- Sorties générées par le programme ---
+runs/
+evidence/
+logs/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+
+# --- Secrets (tokens Telegram, mots de passe email...) ---
+# Ne JAMAIS les mettre sur Git. On partage plutôt un .env.example sans valeurs.
+.env
+.env.*
+!.env.example
+
+# --- Données des services Docker (n8n, Mosquitto) ---
+n8n_data/
+.n8n/
+mosquitto/data/
+mosquitto/log/
+
+# --- Éditeurs et système ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
