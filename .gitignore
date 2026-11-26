@@ -14,7 +14,10 @@ __pycache__/
 
 # --- Données (datasets, vidéos, archives) ---
 # Trop lourdes pour Git : chaque membre les télécharge lui-même.
-data/
+# Les dossiers restent visibles grâce aux fichiers .gitkeep.
+# data/videos/ground_truth.csv (vérité terrain, petit fichier texte) EST versionné.
+data/dfire/
+data/raw/
 *.zip
 *.rar
 *.7z
@@ -37,7 +40,8 @@ models/*
 
 # --- Sorties générées par le programme ---
 runs/
-evidence/
+evidence/*
+!evidence/.gitkeep
 logs/
 *.log
 *.db

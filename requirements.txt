@@ -1,0 +1,17 @@
+# FireGuard - dépendances Python (Python 3.12)
+# Installer avec : pip install -r requirements.txt
+# Règle d'équipe : quiconque ajoute une bibliothèque l'ajoute ICI, avec sa version, dans la même PR.
+
+# --- Vision (P1, P2) ---
+ultralytics==8.4.216
+opencv-python==5.1.0.95
+
+# --- API (P3) : à décommenter quand l'étape 7 démarre ---
+# fastapi
+# uvicorn[standard]
+
+# --- MQTT (P2, P3) : à décommenter quand l'étape 8 démarre ---
+# paho-mqtt
+
+# --- Configuration ---
+# python-dotenv
